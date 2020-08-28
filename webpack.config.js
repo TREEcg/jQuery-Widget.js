@@ -6,6 +6,9 @@ require('./queries-to-json');
 
 module.exports = [
   {
+    node: {
+      fs: "empty"
+    },
     entry: [
       './deps/jquery-2.1.0.js',
       './deps/chosen-1.1.0.js',
@@ -59,6 +62,9 @@ module.exports = [
     },
   },
   {
+    node: {
+      fs: "empty"
+    },
     entry: [
       './src/ldf-client-worker.js',
     ],

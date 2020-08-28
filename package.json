@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@comunica/actor-init-sparql": "1.16.2",
+    "@comunica/actor-init-sparql-tree": "^1.0.3",
     "@comunica/runner": "1.16.0",
     "n3": "0.11.3",
     "rdf-string": "1.4.2",

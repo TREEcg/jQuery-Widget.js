@@ -19,7 +19,8 @@ var handlers = {
   query: function (config) {
     // Create an engine lazily
     if (!engine)
-      engine = require('../comunica-engine');
+      engine = require('@comunica/actor-init-sparql-tree').newEngine()
+    console.log('engine', engine)
 
     // Set up a proxy handler
     if (config.context.httpProxy)
