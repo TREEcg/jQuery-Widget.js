@@ -1,0 +1,10 @@
+# Find all street names that start with 'Gent' in the address registry of Flanders
+# Datasource:  https://fast-and-slow.osoc.be/data/streetname*
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT distinct ?s ?o WHERE { 
+  ?version rdfs:label ?o;
+     dcterms:isVersionOf ?s
+  FILTER(strstarts(?o, "Gent")) 
+}
