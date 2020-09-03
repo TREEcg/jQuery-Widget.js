@@ -1,0 +1,11 @@
+# Select all postal names where the postal code is 9620
+# Datasource:  https://fast-and-slow.osoc.be/data/Postal*
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select ?postcode ?postNaam WHERE {
+  ?postcodeVersion <https://data.vlaanderen.be/ns/adres#postcode> "9620"^^xsd:integer ;
+  	dcterms:isVersionOf ?postcode ;
+   <https://data.vlaanderen.be/ns/adres#postnaam> ?postNaam .
+}
+LIMIT 10
