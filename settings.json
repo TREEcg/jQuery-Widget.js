@@ -45,8 +45,6 @@
     "dbpedia-owl": "http://dbpedia.org/ontology/",
     "dbpprop":     "http://dbpedia.org/property/",
     "wdprop":      "http://www.wikidata.org/prop/direct/",
-    "ruben":       "https://ruben.verborgh.org/profile/#",
-    "rubent":      "https://www.rubensworks.net/#",
     "schema":      "http://schema.org/",
     "bow":         "https://betweenourworlds.org/ontology/",
     "lc":          "http://semweb.mmlab.be/ns/linkedconnections#"
