@@ -18,8 +18,8 @@ var handlers = {
   // Execute the given query with the given options
   query: function (config) {
     // Create an engine lazily
-    if (!engine)
-      engine = require('@comunica/actor-init-sparql-tree').newEngine();
+    // if (!engine)
+    engine = require('@comunica/actor-init-sparql-tree').newEngine();
 
     // Set up a proxy handler
     if (config.context.httpProxy)

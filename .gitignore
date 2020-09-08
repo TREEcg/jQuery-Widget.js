@@ -1,6 +1,5 @@
 node_modules
 *.log
-build
 deps/*-browser.js*
 queries.json
 comunica-engine.js
